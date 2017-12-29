@@ -1,5 +1,5 @@
 Project libft in 42 school.
-• •
+
 Only the following libc functions are allowed : malloc(3), free(3) and write(2), and their usage is restricted.
 You must include the necessary include system files to use one or more of the three authorized functions in your .c files. 
 The only additional system include file you are allowed to use is string.h to have access to the constant NULL and to the 
@@ -16,13 +16,13 @@ void				*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void				*ft_memmove(void	*dst, const void *src, size_t len);
 void				*ft_memchr(const void *s, int c, size_t n);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
-size_t			ft_strlen(const char *s);
+size_t				ft_strlen(const char *s);
 char				*ft_strdup(const char *src);
 char				*ft_strcpy(char *dst, const char *src);
 char				*ft_strncpy(char *dst, const char *src, size_t len);
 char				*ft_strcat(char *s1, const char *s2);
 char				*ft_strncat(char *s1, const char *s2, size_t n);
-size_t			ft_strlcat(char *dst, const char *src, size_t dstsize);
+size_t				ft_strlcat(char *dst, const char *src, size_t dstsize);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strrchr(const char *s, int c);
 char				*ft_strstr(const char *haystack, const char *needle);
@@ -67,12 +67,12 @@ void				ft_putnbr_fd(int n, int fd);
 
 ---------------- Bonus part -------------------
 
-t_list			*ft_lstnew(void const *content, size_t content_size);
+t_list				*ft_lstnew(void const *content, size_t content_size);
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
-t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 int					ft_mycount_words(const char *s);
 void				ft_myrev(char *s);
 void				ft_foreach(int *tab, int length, void (*f)(int));
